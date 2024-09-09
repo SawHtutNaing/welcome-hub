@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    
+    font-family: "Poppins", sans-serif !important;
+
+        
+}
+.carousel-item-no-padding{
+    /* padding: 0; */
+    width: 28.5rem !important;
+}
+
+.carousel-container {
+    padding: 3rem;
+}
+
+
+.leftPoint{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #988FA0;
+    left: 0;
+    top: -9px;
+    border-radius: 50%;
+}
+.rightPoint{
+    
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #988FA0;
+        right: 0;
+        top: -9px;
+        border-radius: 50%;
+    }   
+
+.timelineDot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.my-button{
+    width: 160px !important;
+}
+
+
+.link{
+    position: absolute;
+    z-index: 20000;
+    left:50%;
+    top:50%;
+    
+    transform: translate(-50%, -50%);
+
+}

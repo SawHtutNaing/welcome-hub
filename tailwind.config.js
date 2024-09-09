@@ -16,9 +16,11 @@ export default {
         tertiary : '#69629D' ,
         neutral :'#222222',
         errors :'#EA1717',
-        success :'#2EC93D'
+        success :'#2EC93D' ,
+        timelineBar :'#988FA0'
       } ,
       spacing: {
+        'xxs' :'1px',
         '4xs': '4px',
         '2xs': '8px',
         'xs': '16px',
@@ -51,6 +53,7 @@ export default {
       },
       borderRadius: {
         'button': '6px', 
+        
       }
 
     },

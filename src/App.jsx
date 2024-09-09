@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import './App.css';
-import { Box, Container, Typography } from '@mui/material';
+import { Box,  Container, Typography } from '@mui/material';
 import HomeHero from './assets/images/home-hero.png';
-import RightArrow from './assets/icons/RightArrow.svg';
+import MyCarousel from './Components/Carousel';
+import Work from './Work';
+import HomeFooter from './HomeFooter';
+import ResponsiveAppBar from './ResponsiveAppBar';
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +18,7 @@ function App() {
     disableGutters
     
     >
+       <ResponsiveAppBar/>
       <Container
       maxWidth="false"
       disableGutters
@@ -149,7 +155,7 @@ function App() {
       disableGutters
     sx={{
       paddingTop:'7rem',
-      height:'100vh'
+      // height:'150vh'
     }}
     >
       <Box>
@@ -197,8 +203,11 @@ function App() {
           Wellcome Hub is a pioneer in the home care industry, leveraging advanced technology to address the common challenges faced by home care agencies. 
         </Typography>
       </Box>
-    </Container>
+<MyCarousel></MyCarousel>
 
+    </Container>
+    <Work></Work>
+    <HomeFooter></HomeFooter>
     </Container>
 
   );
