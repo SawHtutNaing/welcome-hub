@@ -56,8 +56,8 @@ function ResponsiveAppBar() {
         </Typography>
         <div style={{ display: "flex", gap: "10px" }}>
           {pages.map((page) => (
-            <a
-              href={
+            <Link
+              to={
                 page != "Find Care"
                   ? "/schedular"
                   : "/lead-manager/create-request"
@@ -71,7 +71,7 @@ function ResponsiveAppBar() {
               `}
             >
               {page}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
